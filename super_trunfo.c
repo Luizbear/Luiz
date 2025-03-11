@@ -1,20 +1,37 @@
-#intrude <stdio.h>
+#include <stdio.h>
 
 int main(){
- int Estado = 'A' a 'H';
-  char codigo da carta[a01, b02, c03, d04];
-  char nome da cidade[];(string);
-  int população;
-  float area em km²;
-  float PIB;
-  int numero de pontos turisticos;
-  
-  printf("Estado: %c\n", Estado);
-  printf("Codigo da carta: %c\n", codigo da carta);
-  printf("Nome da cidade: %s\n", nome da cidade);
-  printf("População: %d\n", população);
-  printf("Area em km²: %f\n", area em km²);
-  printf("PIB: %f\n", PIB);
-  printf("Numero de pontos turisticos: %d\n", numero de pontos turisticos);
+    char Estado[20];
+    char Código da carta[20];
+    char Nome da cidade[20];
+    int População;
+    float Área em km²;
+    float PIB;
+    int Número de pontos turisticos;
 
-  return 0;
+    printf("Digite o nome do estado:");
+    scanf("%s", &Estado);
+    printf("Digite o código da carta:");
+    scanf("%s", &Código da carta);
+    printf("Digite o nome da cidade:");
+    scanf("%s", &Nome da cidade);
+    printf("Digite a população:");
+    scanf("%d", &População);
+    printf("Digite a área em km²:");
+    scanf("%f", &Área em km³);
+    printf("Digite o PIB:");
+    scanf("%f", &PIB);
+    printf("Digite o número de pontos turisticos:");
+    scanf("%d", &Número de pontos turisticos);
+
+    printf("Estado: %s\n", Estado);
+    printf("Código da carta: %s\n", Código da carta);
+    printf("Nome da cidade: %s\n", Nome da cidade);
+    printf("População: %d\n", População);
+    printf("Área em km²: %f\n", Área em km²);
+    printf("PIB: %f\n", PIB);
+    printf("Número de pontos turisticos: %d\n", Número de pontos);
+    return 0;
+
+
+}
