@@ -8,6 +8,8 @@ int main(){
     float PIB1, PIB2;
     int turisticos1, turisticos2;
 
+    printf("BEM VINDO AO SUPER TRUNFO \n");
+
     printf("Digite um codigo para a carta: \n");
     scanf("%s", carta1);
 
