@@ -82,3 +82,8 @@ int main(){
     char escolhido2[50];
     printf("[1] Populacao\n[2] Area\n[3] PIB\n[4] Pontos turisticos\n[5] Densidade populacional\n[6] PIB PER CAPITA\n");
     scanf("%d", &input);
+
+    return 0;
+
+}
+    
