@@ -1,1 +1,84 @@
+#include <stdio.h>
 
+int main(){
+    char carta1[4], carta2 [4];
+    char estado1 = 'A', estado2 = 'B';
+    char Cidade1[20], cidade2[20];
+    int População1, População2;
+    float km²1, Km²2;
+    float PIB1, PIB2;
+    int turisticos1, turisticos2;
+
+    printf("BEM VINDO AO SUPER TRUNFO \n");
+
+    printf("Digite um codigo para a carta: \n");
+    scanf("%s", carta1);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", Cidade1);
+
+    printf("Digite a população: \n");
+    scanf("%d", &População1);
+
+    printf("Digite a área em km²: \n");
+    scanf("%f", &km²1);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", &PIB1);
+
+    printf("Digite o número de pontos turisticos: \n");
+    scanf("%d", &turisticos1);
+
+    printf("Código da carta: %s\n", carta1);
+    printf("Estado: %c\n", estado1);
+    printf("Nome da cidade: %s\n", Cidade1);
+    printf("População: %d\n", População1);
+    printf("Área em km²: %f\n", km²1);
+    printf("PIB: %f\n", PIB1);
+    printf("Número de pontos turisticos: %d\n", turisticos1);
+
+    float densidadepc1 = População1 / km²1;
+    float Pibpc1 = PIB1 / População1 * 10000000000;
+    printf("Densidade Populacional: %.2f\n", População1 / km²1);
+    printf("PIB Per Capita: %.2f\n", PIB1 / População1);
+
+
+  
+    printf("Digite o código da carta: \n");
+    scanf("%s", carta2);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", cidade2);
+
+    printf("Digite a população: \n");
+    scanf("%d", &População2);
+
+    printf("Digite a área em km²: \n");
+    scanf("%f", &Km²2);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", &PIB2);
+
+    printf("Digite o número de pontos turisticos: \n");
+    scanf("%d", &turisticos2);
+
+   
+    printf("Código da carta: %s\n", carta2);
+    printf("Estado: %c\n", estado2);
+    printf("Nome da cidade: %s\n", cidade2);
+    printf("População: %d\n", População2);
+    printf("Área em km²: %f\n", Km²2);
+    printf("PIB: %f\n", PIB2);
+    printf("Número de pontos turisticos: %d\n", turisticos2);
+
+    float densidadepc2 = População2 / Km²2;
+    float Pibpc2 = PIB2 / População2 * 10000000000;
+    printf("Densidade Populacional: %.2f\n", População2 / Km²2);
+    printf("PIB Per Capita: %.2f\n", PIB2 / População2);
+
+    int input, input2, resultado, resultado2;
+    int atributo1_1, atributo1_2, atributo2_1, atributo2_2;
+    char escolhido1[50]; 
+    char escolhido2[50];
+    printf("[1] Populacao\n[2] Area\n[3] PIB\n[4] Pontos turisticos\n[5] Densidade populacional\n[6] PIB PER CAPITA\n");
+    scanf("%d", &input);
